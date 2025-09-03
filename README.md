@@ -83,3 +83,22 @@ flutter build ios --release
 Then open the Xcode workspace at `ios/Runner.xcworkspace` and archive the application.
 
 ## Project Structure
+lib/
+├── app.dart                 # Main app configuration
+├── config/                  # App configuration
+│   ├── constants.dart       # App constants
+│   ├── routes.dart          # Navigation routes
+│   └── themes.dart          # App themes
+├── main.dart                # Entry point
+├── models/                  # Data models
+├── screens/                 # App screens
+│   ├── auth/                # Authentication screens
+│   ├── bus_nav/             # Bus navigation screens
+│   ├── comments/            # Comments screens
+│   ├── dashboard/           # Main dashboard
+│   ├── home/                # Home screen
+│   ├── profile/             # User profile
+│   ├── qr_attendance/       # QR code scanning
+│   └── splash/              # Splash screen
+├── services/                # Backend services
+└── widgets/                 # Reusable widgets
