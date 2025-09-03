@@ -1,0 +1,62 @@
+name: bus_navx
+description: A Flutter mobile application for bus navigation and tracking.
+
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.5
+  
+  # Firebase
+  firebase_core: ^2.15.1
+  firebase_auth: ^4.7.3
+  cloud_firestore: ^4.8.5
+  firebase_storage: ^11.2.6
+  firebase_messaging: ^14.6.7
+  
+  # State Management
+  provider: ^6.0.5
+  
+  # Animations
+  rive: ^0.11.4
+  lottie: ^2.6.0
+  
+  # Storage
+  shared_preferences: ^2.2.0
+  flutter_secure_storage: ^8.0.0
+  
+  # Maps and Location
+  google_maps_flutter: ^2.3.0
+  geolocator: ^10.0.0
+  
+  # QR Code
+  qr_code_scanner: ^1.0.1
+  qr_flutter: ^4.1.0
+  
+  # UI Components
+  flutter_svg: ^2.0.7
+  cached_network_image: ^3.2.3
+  image_picker: ^1.0.2
+  shimmer: ^3.0.0
+  # Add this under dependencies if not already present
+  intl: ^0.18.1
+  flutter_local_notifications: ^14.1.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.2
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/animations/
+    - assets/rive/
