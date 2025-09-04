@@ -1,4 +1,4 @@
-# Bus NavX
+# Bus NavX App
 
 A Flutter mobile application for bus navigation, tracking, and attendance management with QR code scanning functionality.
 
