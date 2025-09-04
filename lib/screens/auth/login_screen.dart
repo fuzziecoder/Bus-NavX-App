@@ -66,10 +66,21 @@ class _LoginScreenState extends State<LoginScreen> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  // Logo
-                  Image.asset(
-                    'assets/images/logo.png',
+                  // Logo (circular bus icon)
+                  Container(
                     height: 120,
+                    width: 120,
+                    decoration: const BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: AppColors.surfaceColor,
+                    ),
+                    child: const Center(
+                      child: Icon(
+                        Icons.directions_bus_rounded,
+                        size: 64,
+                        color: Colors.white,
+                      ),
+                    ),
                   ),
                   const SizedBox(height: 32),
                   
@@ -90,8 +101,9 @@ class _LoginScreenState extends State<LoginScreen> {
                   // Email field
                   CustomTextField(
                     controller: _emailController,
-                    hintText: 'Email',
-                    prefixIcon: Icons.email,
+                    label: 'Email',
+                    hint: 'Enter your email',
+                    prefixIcon: const Icon(Icons.email, color: Colors.white70),
                     keyboardType: TextInputType.emailAddress,
                     validator: (value) {
                       if (value == null || value.isEmpty) {
@@ -108,8 +120,9 @@ class _LoginScreenState extends State<LoginScreen> {
                   // Password field
                   CustomTextField(
                     controller: _passwordController,
-                    hintText: 'Password',
-                    prefixIcon: Icons.lock,
+                    label: 'Password',
+                    hint: 'Enter your password',
+                    prefixIcon: const Icon(Icons.lock, color: Colors.white70),
                     obscureText: !_isPasswordVisible,
                     suffixIcon: IconButton(
                       icon: Icon(

@@ -51,6 +51,7 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^2.0.2
+  flutter_launcher_icons: ^0.13.1
 
 flutter:
   uses-material-design: true
@@ -60,3 +61,22 @@ flutter:
     - assets/icons/
     - assets/animations/
     - assets/rive/
+
+# App icon generation config
+flutter_launcher_icons:
+  android: true
+  ios: true
+  macos:
+    generate: true
+    image_path: "web/icons/buslogooo.jpg"
+  windows:
+    generate: true
+    image_path: "web/icons/buslogooo.jpg"
+  web:
+    generate: true
+    image_path: "web/icons/buslogooo.jpg"
+    background_color: "#ffffff"
+    theme_color: "#8E24AA"
+  image_path: "web/icons/buslogooo.jpg"
+  min_sdk_android: 21
+  remove_alpha_ios: true

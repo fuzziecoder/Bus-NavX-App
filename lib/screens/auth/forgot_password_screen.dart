@@ -74,8 +74,9 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
                     // Email field
                     CustomTextField(
                       controller: _emailController,
-                      hintText: 'Email',
-                      prefixIcon: Icons.email,
+                      label: 'Email',
+                      hint: 'Enter your email',
+                      prefixIcon: const Icon(Icons.email, color: Colors.white70),
                       keyboardType: TextInputType.emailAddress,
                       validator: (value) {
                         if (value == null || value.isEmpty) {

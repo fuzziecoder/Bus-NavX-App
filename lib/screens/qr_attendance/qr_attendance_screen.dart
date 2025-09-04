@@ -348,7 +348,7 @@ class _QrAttendanceScreenState extends State<QrAttendanceScreen>
                 CustomButton(
                   text: 'Stop Scanning',
                   onPressed: _stopScanning,
-                  outline: true,
+                  isOutlined: true,
                 ),
                 IconButton(
                   onPressed: () async {
@@ -406,7 +406,6 @@ class _QrAttendanceScreenState extends State<QrAttendanceScreen>
           CustomButton(
             text: 'Start Scanning',
             onPressed: _startScanning,
-            icon: Icons.camera_alt,
           ),
           const SizedBox(height: 40),
           Container(
