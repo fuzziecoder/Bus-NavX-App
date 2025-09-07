@@ -7,7 +7,6 @@ A Flutter mobile application for bus navigation, tracking, and attendance manage
 [GitHub Repository](https://github.com/fuzziecoder/Bus-NavX-App)
 
 ## Features
-
 - **Authentication**: User login and registration system
 - **Bus Navigation**: Real-time bus tracking and navigation
 - **QR Attendance**: Scan QR codes to mark attendance
